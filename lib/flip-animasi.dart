@@ -18,6 +18,7 @@ class MyAppFlip extends StatelessWidget {
         'reverse_countdown': (_) => ReverseCountdown(),
       },
       home: HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
