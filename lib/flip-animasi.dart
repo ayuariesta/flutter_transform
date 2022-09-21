@@ -27,24 +27,24 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FlipPanel'),
+        title: const Text('FlipPanel'),
       ),
       body: Column(
         children: [
           ListTile(
-            title: Text('FlipImage'),
+            title: const Text('FlipImage'),
             onTap: () => Navigator.of(context).pushNamed('flip_image'),
           ),
           ListTile(
-            title: Text('FlipClock'),
+            title: const Text('FlipClock'),
             onTap: () => Navigator.of(context).pushNamed('flip_clock'),
           ),
           ListTile(
-            title: Text('CountdownClock'),
+            title: const Text('CountdownClock'),
             onTap: () => Navigator.of(context).pushNamed('countdown_clock'),
           ),
           ListTile(
-            title: Text('DaysToGo'),
+            title: const Text('DaysToGo'),
             onTap: () => Navigator.of(context).pushNamed('reverse_countdown'),
           ),
         ],
@@ -58,15 +58,15 @@ class AnimatedImagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final imageWidth = 320.0;
     final imageHeight = 171.0;
-    final toleranceFactor = 0.033;
-    final widthFactor = 0.125;
-    final heightFactor = 0.5;
+    const toleranceFactor = 0.033;
+    const widthFactor = 0.125;
+    const heightFactor = 0.5;
 
     final random = Random();
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('FlipImage'),
+        title: const Text('FlipImage'),
       ),
       body: Container(
         child: Center(
@@ -170,7 +170,7 @@ class FlipClockPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FlipClock'),
+        title: const Text('FlipClock'),
       ),
       body: Center(
         child: SizedBox(
@@ -193,13 +193,13 @@ class CountdownClockPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FlipClock'),
+        title: const Text('FlipClock'),
       ),
       body: Center(
         child: SizedBox(
           height: 64.0,
           child: FlipClock.countdown(
-            duration: Duration(minutes: 1),
+            duration: const Duration(minutes: 1),
             digitColor: Colors.white,
             backgroundColor: Colors.black,
             digitSize: 48.0,
@@ -229,7 +229,7 @@ class ReverseCountdown extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('ReverseCountdown'),
+        title: const Text('ReverseCountdown'),
       ),
       body: Center(
         child: SizedBox(
